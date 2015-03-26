@@ -1,0 +1,38 @@
+{
+  "name": "gulp-emblem-printer",
+  "description": "Converts Emblem to Handlebars",
+  "version": "0.0.0",
+  "repository": "kay-is/gulp-emblem-printer",
+  "author": "Kay <k@kay.is>",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin"
+  ],
+  "dependencies": {
+    "emblem": "^0.5.0",
+    "gulp-util": "^3.0.1",
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "mocha": "^2.0.1",
+    "mocha-lcov-reporter": "0.0.1",
+    "should": "^5.0.0",
+    "stream-array": "^1.0.1",
+    "stream-assert": "^2.0.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/kay-is/gulp-emblem-printer/raw/master/LICENSE"
+    }
+  ]
+}
