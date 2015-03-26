@@ -25,12 +25,12 @@
 ```js
 var emblemPrinter = require('gulp-emblem-printer');
 
-gulp.task('scripts', function() {
-  return gulp.src('./lib/*.js')
+gulp.task('templates', function() {
+  return gulp.src('./templates/*.em')
     .pipe(emblemPrinter({
       extension:'.handlebars'
     }))
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./dist/templates/'));
 });
 ```
 
