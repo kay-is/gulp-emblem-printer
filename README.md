@@ -22,6 +22,8 @@
 
 ## Usage
 
+### Simple Example
+
 ```js
 var emblemPrinter = require('gulp-emblem-printer');
 
@@ -36,6 +38,31 @@ gulp.task('templates', function() {
 
 This will convert Emblem files to Handlebars files and replace their extension to .handlebars (.hbs is the default).
 
+### HTMLBars Example
+
+```js
+var emberHtmlbarsCompiler = require('../bower_components/ember/ember-template-compiler'),
+  gulpHtmlbarsCompiler = require('gulp-htmlbars-compiler');
+  emblemPrinter = require('gulp-emblem-printer');
+
+gulp.task('templates', function() {
+    return gulp.src('./templates/*.em')
+      .pipe(emblemPrinter())
+      .pipe(gulpHtmlbarsCompiler({
+        compiler: emberHtmlbarsCompiler
+      }))
+      .pipe(concat('templates.js'))
+      .pipe(gulp.dest('./dist/'));
+});
+```
+
+This will convert Emblem files to Handlebars files and precompile them with the help of the `gulp-htmlbars-compiler` plugin and EmberJS HTMLBars compiler.
+
+The `gulp-htmlbars-compiler` plugin output looks like this:
+
+```js
+Ember.TEMPLATES['<FILENAME_WITHOUT_EXTENSION>'] = Ember.HTMLBars.template(<PRECOMPILED_TEMPLATE>);
+```
 
 ## LICENSE
 
