@@ -1,14 +1,15 @@
 {
   "name": "gulp-emblem-printer",
   "description": "Converts Emblem to Handlebars",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": "kay-is/gulp-emblem-printer",
   "author": "Kay <k@kay.is>",
   "files": [
     "index.js"
   ],
   "keywords": [
-    "gulpplugin"
+    "gulpplugin",
+    "emblem",
   ],
   "dependencies": {
     "emblem": "^0.6.0",
@@ -29,10 +30,6 @@
   "engines": {
     "node": ">= 0.10"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://github.com/kay-is/gulp-emblem-printer/raw/master/LICENSE"
-    }
+  "license":  "MIT"
   ]
 }
