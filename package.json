@@ -1,7 +1,7 @@
 {
   "name": "gulp-emblem-printer",
   "description": "Converts Emblem to Handlebars",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "kay-is/gulp-emblem-printer",
   "author": "Kay <k@kay.is>",
   "files": [
