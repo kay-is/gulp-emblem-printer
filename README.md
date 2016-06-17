@@ -16,7 +16,7 @@
 </tr>
 <tr>
 <td>Emblem Version</td>
-<td>>= 0.6.0</td>
+<td>>= 0.8.0</td>
 </tr>
 </table>
 
